@@ -1,18 +1,19 @@
 # **Project-Based Virtual Intern : Big Data Analytics PT. KIMIA FARMA, TBK x Rakamin Academy!**
 Code : BigQuery -> [] ()
-Data Visualization : Google Looker Studio -> []()
-Analytics Dataset : Spreadsheet -> []()
+Data Visualization : Google Looker Studio -> [Lihat Disini](https://lookerstudio.google.com/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9)
+Analytics Dataset : Spreadsheet -> [Lihat Disini](https://docs.google.com/spreadsheets/d/1ZJjGioO-NGQ2hxZkUqzeDdlVdotU801xvUfFmCDZIX0/edit?usp=sharing)
 <br>
 
 ---
 
 ## 📂 **Introduction**
-Big Data Analytics Kimia Farma merupakan project-based virtual internship experience yang difasilitasi oleh [Rakamin Academy](). Pada project ini saya berperan sebagai Big Data Analytics yang diminta untuk menganalisis dan membuat laporan penjualan perusahaan menggunakan data-data yang telah disediakan. Dari project ini, saya juga banyak belajar tentang data warehouse, datalake, dan datamart. Aplikasi penggunaan SQL di BigQuery serta visualisasi di Google Looker Studio. <br>
+Big Data Analytics Kimia Farma merupakan project-based virtual internship experience yang difasilitasi oleh [Rakamin Academy](https://www.rakamin.com/virtual-internship-experience/kimiafarma-big-data-analytics-virtual-internship-program). Pada project ini saya berperan sebagai Big Data Analytics yang diminta untuk menganalisis dan membuat laporan penjualan perusahaan menggunakan data-data yang telah disediakan. Dari project ini, saya juga banyak belajar tentang data warehouse, datalake, dan datamart. Aplikasi penggunaan SQL di BigQuery serta visualisasi di Google Looker Studio. <br>
 <br>
 
 **Objectives**
 - Membuat design datamart untuk dilakukan analisa.
 - Membuat Dashboard Performance Analytics Kimia Farma Business Year 2020-2023.
+<br>
 
 **Dataset** <br>
 Dataset yang diberikan terdiri dari tabel-tabel berikut :
@@ -31,21 +32,44 @@ Tabel agregat adalah tabel yang dibuat dengan mengumpulkan dan menghitung data d
     <br>
     
 ```sql
-CREATE TABLE agg_table (
-SELECT
-    tanggal,
-    MONTHNAME(tanggal) AS bulan,        -- kolom nama bulan
-    id_invoice,
-    cabang_sales AS lokasi_cabang,
-    nama AS pelanggan,
-    nama_barang AS produk,
-    lini AS merek,
-    jumlah AS jumlah_produk_terjual,
-    harga AS harga_satuan,
-    (jumlah * harga) AS total_pendapatan  -- kolom baru total pendapatan
-FROM base_table
-ORDER BY 1, 4, 5, 6, 7, 8, 9, 10
-);
+CREATE TABLE `kimia_farma.kf_analytics_data` AS #Membuat table analytics_data pada datased kimia_farma
+SELECT #Menggunakan fungsi select untuk memilih tiap kolom dari tabel yang kita inginkan
+    ft.transaction_id,
+    ft.date,
+    ft.branch_id,
+    kc.branch_name,
+    kc.kota,
+    kc.provinsi,
+    kc.rating AS rating_cabang, #Mengubah nama kolom menjadi rating_cabang
+    ft.customer_name,
+    ft.product_id,
+    p.product_name,
+    p.price AS actual_price, #Mengubah nama kolom menjadi actual_price
+    ft.discount_percentage,
+    CASE #Membuat fungsi case untuk mengkondisikan nilai berdasarkan beberapa kriteria, mirip dengan penggunaan if-else dalam bahasa pemrograman lainnya.
+        WHEN ft.price <= 50000 THEN 0.10
+        WHEN ft.price > 50000 AND ft.price <= 100000 THEN 0.15
+        WHEN ft.price > 100000 AND ft.price <= 300000 THEN 0.20
+        WHEN ft.price > 300000 AND ft.price <= 500000 THEN 0.25
+        WHEN ft.price > 500000 THEN 0.30
+    END AS persentase_gross_laba,
+    (p.price - (p.price * ft.discount_percentage)) AS nett_sales,
+    (p.price - (p.price * ft.discount_percentage)) * CASE
+        WHEN p.price <= 50000 THEN 0.10
+        WHEN p.price > 50000 AND p.price <= 100000 THEN 0.15
+        WHEN p.price > 100000 AND p.price <= 300000 THEN 0.20
+        WHEN p.price > 300000 AND p.price <= 500000 THEN 0.25
+        ELSE 0.30
+    END AS nett_profit,
+    ft.rating AS rating_transaksi
+FROM #Mengambil tabel kf_final_transaction dari dataset kimia_farma
+    `kimia_farma.kf_final_transaction` ft
+INNER JOIN #Menggabungkan tabel kf_kantor_cabang menggunakan inner join
+    `kimia_farma.kf_kantor_cabang` kc ON ft.branch_id = kc.branch_id
+INNER JOIN #Menggabungkan tabel kf_product menggunakan inner join
+    `kimia_farma.kf_product` p ON ft.product_id = p.product_id
+INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
+    `kimia_farma.kf_inventory` i ON ft.branch_id = i.branch_id AND ft.product_id = i.product_id;
 ```
     
 <br>
