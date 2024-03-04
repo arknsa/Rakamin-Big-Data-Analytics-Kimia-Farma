@@ -1,4 +1,4 @@
-# **Project-Based Virtual Intern : Big Data Analytics PT. KIMIA FARMA, TBK x Rakamin Academy!**
+# **Kimia Farma Big Data Analytics Project Based Internship**
 SQL Code : BigQuery -> [Lihat Disini](https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/Integrated_Big-Data_Kimia-Farma.sql) <br>
 Data Visualization : Google Looker Studio -> [Lihat Disini](https://lookerstudio.google.com/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9) <br>
 Analytics Dataset : Spreadsheet -> [Lihat Disini](https://docs.google.com/spreadsheets/d/1ZJjGioO-NGQ2hxZkUqzeDdlVdotU801xvUfFmCDZIX0/edit?usp=sharing) <br>
