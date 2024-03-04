@@ -12,7 +12,7 @@ Big Data Analytics Kimia Farma merupakan project-based virtual internship experi
 
 **Objectives**
 - Membuat design datamart untuk dilakukan analisa.
-- Membuat Dashboard Performance Analytics Kimia Farma Business Year 2020-2023.
+- Membuat Dashboard Performance Analytics Kimia Farma Business Tahun 2020-2023.
 <br>
 
 **Dataset** <br>
@@ -76,7 +76,7 @@ INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
 </details>
 <br>
 <p align="center">
-    <kbd> <img width="750" alt="sql bigquery" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/sql-bigquery.jpg"> </kbd> <br>
+    <kbd> <img width="750" alt="sql bigquery" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/SQL-BigQuery.jpg"> </kbd> <br>
     Gambar 1 — SQL BigQUery dari PT. Kimia Farma Tahun 2020-2023
 </p>
 <br>
