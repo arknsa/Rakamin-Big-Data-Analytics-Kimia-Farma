@@ -77,8 +77,8 @@ INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
 <br>
 
 <p align="center">
-    <kbd> <img width="750" alt="sample aggregat" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/kf_integration_data.jpg"> </kbd> <br>
-    Gambar 2 — Sampel Hasil Pembuatan Tabel Aggregat
+    <kbd> <img width="750" alt="sample aggregat" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/kf_analytics_data.jpg"> </kbd> <br>
+    Gambar 1 — Datamart dari PT. Kimia Farma Tahun 2020-2023
 </p>
 <br>
 
@@ -90,7 +90,7 @@ INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
 
 <p align="center">
     <kbd> <img width="1000" alt="Kimia_Farma_page-0001" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/Rakamin_KF_Analytics_Data_Visualization.jpg"> </kbd> <br>
-    Gambar 3 — Sales Report Dashboard PT. Kimia Farma
+    Gambar 2 — Sales Report Dashboard PT. Kimia Farma Tahun 2020-2023
 </p>
 <br>
 
