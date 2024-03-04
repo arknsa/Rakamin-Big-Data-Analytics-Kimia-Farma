@@ -77,7 +77,7 @@ INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
 <br>
 
 <p align="center">
-    <kbd> <img width="750" alt="sample aggregat" src="https://user-images.githubusercontent.com/115857221/222876809-62000814-75b6-4f82-b6b7-05d00e618315.png"> </kbd> <br>
+    <kbd> <img width="750" alt="sample aggregat" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/kf_integration_data.jpg"> </kbd> <br>
     Gambar 2 — Sampel Hasil Pembuatan Tabel Aggregat
 </p>
 <br>
