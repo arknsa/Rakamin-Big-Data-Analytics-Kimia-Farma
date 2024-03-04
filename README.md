@@ -90,7 +90,8 @@ INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
 
 ---
 
-## 📂 **Data Visualization**
+## 📂 **Data Visualization** <br>
+Berikut merupakan hasil analisis dan evaluasi kinerja Kimia Farma dari tahun 2020-2023 yang divisualisasikan menggunakan Google Looker Studio.<br>
 
 [Lihat pada halaman Looker Data Studio](https://lookerstudio.google.com/u/0/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9/page/tEnnC/edit).
 
