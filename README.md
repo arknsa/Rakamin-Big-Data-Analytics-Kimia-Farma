@@ -1,7 +1,7 @@
 # **Project-Based Virtual Intern : Big Data Analytics PT. KIMIA FARMA, TBK x Rakamin Academy!**
-Code : BigQuery -> [Lihat Disini] (https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/Integrated_Big-Data_Kimia-Farma.sql)
-Data Visualization : Google Looker Studio -> [Lihat Disini](https://lookerstudio.google.com/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9)
-Analytics Dataset : Spreadsheet -> [Lihat Disini](https://docs.google.com/spreadsheets/d/1ZJjGioO-NGQ2hxZkUqzeDdlVdotU801xvUfFmCDZIX0/edit?usp=sharing)
+Code : BigQuery -> [Lihat Disini] (https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/Integrated_Big-Data_Kimia-Farma.sql) <br>
+Data Visualization : Google Looker Studio -> [Lihat Disini](https://lookerstudio.google.com/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9) <br>
+Analytics Dataset : Spreadsheet -> [Lihat Disini](https://docs.google.com/spreadsheets/d/1ZJjGioO-NGQ2hxZkUqzeDdlVdotU801xvUfFmCDZIX0/edit?usp=sharing) <br>
 <br>
 
 ---
@@ -86,10 +86,10 @@ INNER JOIN #Menggabungkan tabel kf_inventory menggunakan inner join
 
 ## 📂 **Data Visualization**
 
-[Lihat pada halaman Looker Data Studio]([https://lookerstudio.google.com/reporting/3c67b292-3be2-484d-bc29-27bd0b4015fd](https://lookerstudio.google.com/u/0/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9/page/tEnnC/edit)).
+[Lihat pada halaman Looker Data Studio](https://lookerstudio.google.com/u/0/reporting/d0658e1c-3b0f-4330-8eb9-5a4c6efe86d9/page/tEnnC/edit).
 
 <p align="center">
-    <kbd> <img width="1000" alt="Kimia_Farma_page-0001" src="https://user-images.githubusercontent.com/115857221/222877035-53371a89-081d-4ec5-9e72-65b0176a96fd.jpg"> </kbd> <br>
+    <kbd> <img width="1000" alt="Kimia_Farma_page-0001" src="https://github.com/arknsa/Rakamin-Big-Data-Analytics-Kimia-Farma/blob/main/Rakamin_KF_Analytics_Data_Visualization.jpg"> </kbd> <br>
     Gambar 3 — Sales Report Dashboard PT. Kimia Farma
 </p>
 <br>
