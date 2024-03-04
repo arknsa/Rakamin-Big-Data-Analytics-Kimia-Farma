@@ -20,7 +20,7 @@ Dataset yang diberikan terdiri dari tabel-tabel berikut :
 - kf_inventory
 - kf_kantor_cabang
 - kf_product
-- <br>
+<br>
 
 ## 📂 **Design Datamart**
 ### Tabel Aggregate
