@@ -14,7 +14,7 @@ Big Data Analytics Kimia Farma merupakan project-based virtual internship experi
 - Membuat design datamart untuk dilakukan analisa.
 - Membuat Dashboard Performance Analytics Kimia Farma Business Year 2020-2023.
 
-- **Dataset** <br>
+**Dataset** <br>
 Dataset yang diberikan terdiri dari tabel-tabel berikut :
 - kf_final_transaction
 - kf_inventory
